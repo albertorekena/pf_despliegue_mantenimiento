@@ -3,10 +3,9 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile.dev
-    container_name: frontend-dev
+    container_name: mantenimiento-dev
     volumes:
       - ./app:/var/www/html/app
-      - ./config/dev/virtualhosts/films-alberto-despliegue-dev.com.conf:/etc/apache2/sites-enabled/films-alberto-despliegue-dev.com.conf
-      - ./app/public_html/config/urls-dev.js:/var/www/html/app/public_html/config/urls.js
+      - ./config/dev/virtualhosts/films-alberto-despliegue-mantenimiento-dev.com.conf:/etc/apache2/sites-enabled/films-alberto-despliegue-mantenimiento-dev.com.conf
     ports:
       - "8081:80"

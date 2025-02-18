@@ -1,1 +1,0 @@
-let apiUrl = "http://films-alberto-despliegue.api.chickenkiller.com:8081";

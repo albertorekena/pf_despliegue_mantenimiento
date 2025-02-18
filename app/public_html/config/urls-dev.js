@@ -1,1 +1,0 @@
-let apiUrl = "http://films-alberto-despliegue-dev.api.com:8080";

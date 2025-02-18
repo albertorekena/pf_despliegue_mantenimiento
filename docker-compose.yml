@@ -1,10 +1,9 @@
 services:
   app:
     build: . 
-    container_name: frontend
+    container_name: mantenimiento
     volumes:
       - ./app:/var/www/html/app
-      - ./config/prod/virtualhosts/films-alberto-despliegue.chickenkiller.com.conf:/etc/apache2/sites-enabled/films-alberto-despliegue.chickenkiller.com.conf
-      - ./app/public_html/config/urls.js:/var/www/html/app/public_html/config/urls.js
+      - ./config/prod/virtualhosts/films-alberto-despliegue-mantenimiento.chickenkiller.com.conf:/etc/apache2/sites-enabled/films-alberto-despliegue-mantenimiento.chickenkiller.com.conf
     ports:
       - "80:80"
